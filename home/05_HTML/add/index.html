@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center">Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="surname" placeholder="Фамилия" pattern="[А-Яа-яЁё]" maxlength="25" autofocus><br>
+            <input type="text" name="firstname" placeholder="Имя" pattern="[А-Яа-яЁё]" maxlength="20"><br>
+            <input type="text" name="lastname" placeholder="Отчество" pattern="[А-Яа-яЁё]" maxlength="24">
+            <fieldset>
+                <legend>Паспортные данные</legend>
+                <input type="text" name="series" id="password" placeholder="AA" pattern="[A-Z]{2}" maxlength="2"
+                    required>
+                <input type="text" name="number" id="password" placeholder="1234567" pattern="[0-9]{7}" maxlength="7"
+                    required>
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <input type="text" name="year" id="birthdate" value="2000" pattern="[0-9]{4}"><br>
+                <select name="months" id="birthdate">
+                    <option value="1">Январь</option>
+                    <option value="2">Февраль</option>
+                    <option value="3">Март</option>
+                    <option value="4">Апрель</option>
+                    <option value="5">Май</option>
+                    <option value="6">Июнь</option>
+                    <option value="7">Июль</option>
+                    <option value="8">Август</option>
+                    <option value="9">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                </select><br>
+                <input type="number" name="date" id="birthdate" min="1" max="31" value="1">
+            </fieldset>
+            <p>
+                <select name="national" id="nationality" required>
+                    <option value="BY">РБ</option>
+                    <option value="RU">РФ</option>
+                </select><br>
+                Адрес: <br> <textarea name="adress" id="adress" cols="20" rows="3"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Интересы</legend>
+            <fieldset>
+                <legend>Хобби</legend>
+                <label><input type="checkbox" name="hobby[]" value="hobby1">Рыбалка</label><br>
+                <label><input type="checkbox" name="hobby[]" value="hobby2">Астраномия</label><br>
+                <label><input type="checkbox" name="hobby[]" value="nobby3">Дайвинг</label><br>
+                <label><input type="checkbox" name="hobby[]" value="hobby4">Марки</label>
+            </fieldset>
+            <fieldset>
+                <legend>Домашние животные</legend>
+                <select name="animals[]" size="12" multiple>
+                    <optgroup name="parrots[]" label="Попугай">
+                        <option value="parrot1">Волнистый</option>
+                        <option value="parrot2">Ара</option>
+                        <option value="parrot3">Неразлучник</option>
+                    </optgroup>
+                    <optgroup name="fish[]" label="Рыба">
+                        <option value="fish1">Караси</option>
+                        <option value="fish2">Окуни</option>
+                        <option value="fish3">Осетр</option>
+                    </optgroup>
+                    <optgroup name="birds[]" label="Птицы">
+                        <option value="bird1">Стая ворон</option>
+                        <option value="bird2">Аист</option>
+                        <option value="bird3">Археоптерикс</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+            <input type="text" name="login" placeholder="Логин" pattern="[A-Za-z]{5,}" maxlength="20" required><br>
+            <input type="password" name="password" placeholder="Пароль" pattern="[A-Za-z]{10,}" maxlength="20" required
+                autocomplete="off">
+        </fieldset>
+        <fieldset>
+            <legend>Координаты:</legend>
+            <input type="email" name="e-mail" placeholder="Введите адрес почты"><br>
+            <input type="url" name="url" placeholder="Введите адрес сайта">
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+            <input type="number" name="numbers1" min="-2.5" max="2.5" step="0.1"><br>
+            <input type="range" name="numbers2" max="10" min="1">
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления</legend>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить"><br>
+            <button><img src="button.jpg" alt="Тестовая кнопка"></button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
