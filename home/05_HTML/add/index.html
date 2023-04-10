@@ -13,19 +13,19 @@
     <form action="http://fe.it-academy.by/TestForm.php">
         <fieldset>
             <legend>Личные данные</legend>
-            <input type="text" name="surname" placeholder="Фамилия" pattern="[А-Яа-яЁё]" maxlength="25" autofocus><br>
-            <input type="text" name="firstname" placeholder="Имя" pattern="[А-Яа-яЁё]" maxlength="20"><br>
-            <input type="text" name="lastname" placeholder="Отчество" pattern="[А-Яа-яЁё]" maxlength="24">
+            <input type="text" name="surname" placeholder="Фамилия" pattern="[А-Яа-яЁё]" maxlength="25" required autofocus><br>
+            <input type="text" name="firstname" placeholder="Имя" pattern="[А-Яа-яЁё]" maxlength="20" required><br>
+            <input type="text" name="lastname" placeholder="Отчество" pattern="[А-Яа-яЁё]" maxlength="24" required>
             <fieldset>
                 <legend>Паспортные данные</legend>
-                <input type="text" name="series" id="password" placeholder="AA" pattern="[A-Z]{2}" maxlength="2"
+                <input type="text" name="series" size="2" placeholder="AA" pattern="[A-Z]{2}" maxlength="2"
                     required>
-                <input type="text" name="number" id="password" placeholder="1234567" pattern="[0-9]{7}" maxlength="7"
+                <input type="text" name="number" size="7" placeholder="1234567" pattern="[0-9]{7}" maxlength="7"
                     required>
             </fieldset>
             <fieldset>
                 <legend>Дата рождения</legend>
-                <input type="text" name="year" id="birthdate" value="2000" pattern="[0-9]{4}"><br>
+                <input type="text" name="year" size="4" value="2000" pattern="[0-9]{4}"><br>
                 <select name="months" id="birthdate">
                     <option value="1">Январь</option>
                     <option value="2">Февраль</option>
