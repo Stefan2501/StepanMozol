@@ -1,0 +1,22 @@
+.nav{
+    width: 15em;
+    background-color: antiquewhite;
+    float: left;
+    height: 300px;
+}
+.article{
+    background-color: cornsilk;
+    margin-bottom: .2em;
+    white-space: pre-wrap;
+}
+.footer{
+    background-color: antiquewhite;
+    height: auto;
+}
+.clear{
+    clear: both;
+}
+img{
+    width: 100px;
+    float: right;
+}
