@@ -1,0 +1,17 @@
+h3{
+    text-align: right;
+}
+address{
+    display: inline;
+}
+.head{
+    white-space: pre;
+    text-align: right;
+}
+.text{
+    font-family: 'Bad Script', cursive;
+    text-indent: 1.5em;
+}
+h2{
+    text-decoration: underline;
+}
