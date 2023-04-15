@@ -1,0 +1,21 @@
+div {
+    border: solid black 1px;
+    white-space: pre
+}
+
+.doc {
+    border-radius: 0,10
+}
+
+.pdf {
+    border-radius: 0,10
+}
+
+.zip {}
+
+ul {
+    list-style-image: url(text.jpg)
+}
+li{
+    
+}
