@@ -1,16 +1,24 @@
+body{
+    height: 10000px;
+}
+.main{
+    background-color: rgb(250, 215, 169);
+
+}
 .nav{
     width: 15em;
-    background-color: antiquewhite;
+    background-color: rgb(250, 215, 169);
     float: left;
     height: 300px;
 }
 .article{
-    background-color: cornsilk;
+    margin-left: 15em;
+    background-color: #abacac;
     margin-bottom: .2em;
     white-space: pre-wrap;
 }
 .footer{
-    background-color: antiquewhite;
+    background-color: rgb(226, 135, 16);
     height: auto;
 }
 .clear{
@@ -18,5 +26,7 @@
 }
 img{
     width: 100px;
+    margin: 10px;
     float: right;
 }
+
