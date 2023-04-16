@@ -1,13 +1,19 @@
 div.MenuLevel1 {
-    width: 300px;
+    width: 612px;
 }
 
 div.MenuLevel1>div {
     background-color: yellow;
     border: solid blue 1px;
+    width: 100px;
+    text-align: center;
     position: relative;
     cursor: pointer;
-    float: left;  
+    float: left;
+}
+
+div.MenuLevel1>div:hover {
+    background-color: rgb(43, 226, 150);
 }
 
 div.MenuLevel2 {
@@ -27,38 +33,43 @@ div.MenuLevel1>div:hover div.MenuLevel2 {
     left: 80%;
     top: 90%;
     z-index: 1;
-    
+
 }
-@media all and (max-width: 310px) {
+
+@media all and (max-width: 600px) {
     div.MenuLevel1 {
         width: 100px;
     }
-    
+
+    div.MenuLevel1>div:hover {
+        background-color: rgb(43, 226, 150);
+    }
     div.MenuLevel1>div {
         background-color: yellow;
         border: solid blue 1px;
         position: relative;
-        cursor: pointer
+        cursor: pointer;
+        float: none;
+
     }
-    
+
     div.MenuLevel2 {
         width: 150px;
         display: none
     }
-    
+
     div.MenuLevel2>div {
         background-color: cyan;
         border: solid blue 1px;
         cursor: pointer
     }
-    
+
     div.MenuLevel1>div:hover div.MenuLevel2 {
         display: block;
         position: absolute;
         left: 80%;
         top: 90%;
         z-index: 1;
-        transition-duration: .2s
+
     }
 }
-
