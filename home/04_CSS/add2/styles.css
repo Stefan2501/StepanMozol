@@ -20,7 +20,7 @@ tr:nth-child(even) td:nth-child(2n) {
     border-color: black;
     color: white;
 }
-tr{
+table{
     counter-reset: n 65;
 }
 td::after{
