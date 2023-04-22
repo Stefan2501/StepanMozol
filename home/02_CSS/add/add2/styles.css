@@ -1,0 +1,41 @@
+body{
+    height: 10000px;
+}
+main {
+    background-color: rgb(250, 215, 169);
+    display: flex;
+}
+
+.nav{
+    width: 15em;
+    background-color: rgb(250, 215, 169);
+    height: 300px;
+    
+
+
+}
+.article{
+    background-color: #abacac;
+    white-space: pre-wrap;
+
+}
+
+.article2{background-color: #abacac;
+    white-space: pre-wrap;
+    max-width: 80em;
+
+}
+    
+footer{
+    background-color: rgb(226, 135, 16);
+    height: auto;
+    padding: 3px;
+    text-align: center;   
+}
+
+img{
+    width: 100px;
+    margin: 10px;
+    float: right;
+}
+
